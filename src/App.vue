@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <HeaderDischi />
-    <MainDischi />
+    <header-dischi />
+    <main-dischi />
   </div>
 </template>
 
@@ -18,12 +18,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+$primary: rgb(46,58,70);
+$secondary: rgb(30,45,59);
 @import "~bootstrap/scss/bootstrap";
-
-#app {
-  min-width: 1200px;
-  padding: 0;
-  margin: 0;
-}
 </style>
