@@ -19,5 +19,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~bootstrap/scss/bootstrap";
 
+#app {
+  min-width: 1200px;
+  padding: 0;
+  margin: 0;
+}
 </style>

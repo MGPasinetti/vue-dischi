@@ -1,16 +1,19 @@
 <template>
-  <header>
-    sono l'HEADER
+  <header class="text-center">
+    HEADER
   </header>
 </template>
 
 <script>
 export default {
-  // eslint-disable-next-line
-  name: `HeaderDischi`,
+  name: 'HeaderDischi',
 };
 </script>
 
 <style lang="scss" scoped>
-
+header {
+  height: 10vh;
+  background-color: #2E3A46;
+  color: white;
+}
 </style>
