@@ -1,10 +1,10 @@
 <template>
   <header class="bg-primary">
-    <div class="container d-flex justify-content-between align-items-center my-header">
+    <div class="d-flex justify-content-between align-items-center">
       <div class="column-left">
         <!-- spotify-logo -->
       </div>
-      <div class="column-right">
+      <div class="column-right align-self-center">
         <select class="p-1" name="generi" id="">
           <option value="all">--seleziona generi--</option>
           <option value="rock">rock</option>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-header{
+header {
   height: 3.5rem;
 }
 </style>

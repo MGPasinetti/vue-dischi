@@ -1,10 +1,10 @@
 <template>
-  <div class="col text-center px-3" :id="albumData.genre">
+  <div class="col text-center px-3 d-flex align-items-stretch" :id="albumData.genre">
       <div class="bg-primary p-3 mb-3 my-card">
-      <img class="img-fluid" :src="albumData.poster" :alt="albumData.title">
-      <h2 class="fs-5 mt-2 text-white">{{ albumData.title }}</h2>
-      <h3 class="fs-6 my-color">{{ albumData.author }}</h3>
-      <div class="my-color">{{ albumData.year }}</div>
+        <img class="img-fluid" :src="albumData.poster" :alt="albumData.title">
+        <h2 class="fs-5 mt-3 mb-4 text-white">{{ albumData.title.toUpperCase() }}</h2>
+        <h3 class="fs-6 mb-0 my-color">{{ albumData.author }}</h3>
+        <div class="mt-0 my-color">{{ albumData.year }}</div>
       </div>
   </div>
 </template>
@@ -21,9 +21,8 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/style/style.scss';
 .my-card{
-  height: 20rem;
   .my-color {
-    color: $black-text
+    color: grey;
   }
 }
 </style>
