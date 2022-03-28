@@ -19,7 +19,4 @@ export default {
 </script>
 
 <style lang="scss">
-$primary: rgb(46,58,70);
-$secondary: rgb(30,45,59);
-@import "~bootstrap/scss/bootstrap";
 </style>
