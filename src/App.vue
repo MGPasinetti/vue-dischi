@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <header-dischi />
-    <main-dischi />
+    <HeaderDischi />
+    <MainDischi />
   </div>
 </template>
 
@@ -19,4 +19,5 @@ export default {
 </script>
 
 <style lang="scss">
+ @import "~bootstrap/scss/bootstrap";
 </style>
