@@ -1,7 +1,15 @@
 <template>
   <div id="app">
-    <HeaderDischi />
-    <MainDischi />
+    <header-dischi
+      :options="arrOptions"
+      @genre-selected="setGenreSelection"
+      @author-inserted="setAuthorSearch"
+    />
+    <main-dischi
+      :str-selected-genre="strGenre"
+      :str-search-author="strAuthor"
+      @data-fetched="setArrData"
+    />
   </div>
 </template>
 
@@ -15,9 +23,32 @@ export default {
     HeaderDischi,
     MainDischi,
   },
+  data() {
+    return {
+      strGenre: '',
+      strAuthor: '',
+      arrDischi: [],
+    };
+  },
+  computed: {
+    arrOptions() {
+      return [...new Set(this.arrDischi.map((element) => element.genre))];
+    },
+  },
+  methods: {
+    setArrData(arrDischiPassed) {
+      this.arrDischi = arrDischiPassed;
+    },
+    setGenreSelection(genrePassed) {
+      this.strGenre = genrePassed;
+    },
+    setAuthorSearch(authorPassed) {
+      this.strAuthor = authorPassed;
+    },
+  },
 };
 </script>
 
 <style lang="scss">
- @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 </style>
